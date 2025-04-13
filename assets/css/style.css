@@ -7,11 +7,8 @@
     margin: 0;
     padding: 0;
 }
-
 html, body {
     height: 100%;
-
-
 }
 
 
@@ -19,50 +16,111 @@ body {
     front-family: Raleway;
     color: white;
     background-color: black;
+    font-weight: 300;
 }
 
 header {
     text-align: center;
-    padding-bottom: 20 px;
+    padding-bottom: 20px;
     opacidad: 1;
     backgraund-color: black;
 
+}
+header .frase{
+    padding: 10px;
+    font-weight: 500;
 }
 
 header img {
     width: 100%;
 }
-
+#description{
+    text-align: center;
+}
 .descripcion {
-    padding: 50px;
+    padding: 70px;
     display: flex;
     text-align: left;
 
     
 }
 
-.descripcion img {
-    width: 600 px;
-}
-
-.descripcion p {
+.descripcion .imagen {
+    height: 100px;
     vertical-align: center;
 }
 
-.caracteristicas {
+.descripcion .frase {
+    vertical-align: center;
+    text-align: justify;
+    padding-right: 40px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+#Caracteristicas {
     background-color: #1E1E13;
 
     text-align: center;
     font-size: 20px;
     padding-top: 50px;
+
     
 }
 
-.contenedor {
-    display: flex;
-    padding-top: 100px;
-    justify-content: center;
-    gap: 100px;
-    font-weight: ;
+.icono{
+    grid-area: iconos;
 }
 
+.frase{
+    grid-area: frases;
+}
+
+#contenedor_imagenes {
+    display: grid;
+    padding: 60px 0px 10px 10px;
+    justify-content: center;
+    
+   
+    font-weight: 500;
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas: ". iconos iconos iconos iconos iconos iconos ."
+      ". frases frases frases frases frases frases .";
+}
+
+#imagenes_finales{
+
+    vertical-align: center;
+}/*
+#imagenes_finales div{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: "img img img";
+}*/
+#imagenes_finales div img{
+    padding-left:2%;
+    padding-rigth:2%;
+    max-width: 30%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+
+a {
+    color: greenyellow;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #1E1E13;
+}
