@@ -94,8 +94,8 @@ header img {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
-    grid-template-areas: ". iconos iconos iconos iconos iconos iconos ."
-      ". frases frases frases frases frases frases .";
+    grid-template-areas:    ". iconos iconos iconos iconos iconos iconos ."
+                            ". frases frases frases frases frases frases .";
 }
 
 #imagenes_finales{
